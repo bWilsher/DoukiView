@@ -1,0 +1,23 @@
+/*CSS only used for the sake of a consistent design throughout website.*/
+main{
+	height: 40em;
+}
+
+h2{
+	float: left;
+	width: 100%;
+}
+
+ul#ui-id-1{
+	list-style-type: circle;
+	padding: 0;
+	left: -30px;
+	border: 1px solid black;
+	min-width: 26.3%;
+	max-width: 26.3%;
+
+}
+
+span.ui-helper-hidden-accessible{
+	display: none;
+}

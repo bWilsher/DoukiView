@@ -1,0 +1,85 @@
+/*CSS only used for the sake of a consistent design throughout website.*/
+body {
+    margin: 1%;
+    padding: 0;
+    font-size: 90%;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+    border-left: 2em solid #231F20;
+    border-right: 2em solid #231F20;
+}
+
+main{
+	margin: 1%;
+	width: 97%;
+}
+
+header{
+    text-align: center;
+    height: 100%;
+}
+
+
+/* Default CSS styling for website, this allows for the website design to remain consistent throughout therefore has been linked with every html/php page on the website. */
+/* Navigation CSS */
+nav {
+    width: 100%;
+    display: inline-block;
+}
+
+nav ul {
+    margin-top: 0;
+    padding: 1%;
+    background-color: #539DB8;
+    border-top: thin solid #373737;
+    border-bottom: thin solid #373737;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0;
+    margin: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+nav a {
+    padding: 0.4em;
+    letter-spacing: 0.2em;
+    font-size: 1.1em;
+    border-radius: 0.5em;
+    color: #373737;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #cccccc;
+}
+
+nav a:active {
+    background-color: #cccccc;
+    color: #373737;
+    border-bottom: 5px solid #373737;
+}
+/*End of navigation CSS.*/
+
+#logo{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 18.750em;
+    height: 12.500em;
+    border: double #373737;
+}
+
+/* Minimal footer CSS to keep to consistency */
+footer{
+    text-decoration-color: #373737;
+    border-top: 1px solid #373737;
+    padding-left: 1%;
+    padding-bottom: 0.01%;
+}
