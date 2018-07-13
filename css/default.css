@@ -68,7 +68,7 @@ nav a:active {
 /*End of navigation CSS.*/
 
 #logo{
-    position: absolute;
+    position: relative;
     top: 4%;
     left: 3%;
     width: 18.750em;
