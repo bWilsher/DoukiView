@@ -3,11 +3,6 @@ main{
 	height: 40em;
 }
 
-h2{
-	float: left;
-	width: 100%;
-}
-
 ul#ui-id-1{
 	list-style-type: circle;
 	padding: 0;

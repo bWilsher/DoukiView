@@ -71,8 +71,8 @@ nav a:active {
     position: relative;
     top: 4%;
     left: 3%;
-    width: 18.750em;
-    height: 12.500em;
+    width: auto;
+    height: 100%;
     border: double #373737;
 }
 
