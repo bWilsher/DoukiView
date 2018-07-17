@@ -1,3 +1,13 @@
-<p>
-  featured-films works!
-</p>
+<div id = "imageContainer">
+<div id = "images" [ngStyle]="{'background-image':'url(' + imageArray[imageIndex] + ')' }" >
+
+ 
+
+
+  <!-- <img [src] = "imageArray[imageIndex]"> -->
+  
+ 
+  <i class="fas fa-angle-left imageBtns" (click)="moveLeft()"></i>
+  <i class="fas fa-angle-right imageBtns" (click)="moveRight()"></i>
+</div>
+</div>
