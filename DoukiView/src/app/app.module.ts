@@ -6,6 +6,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FeaturedFilmsComponent } from './featured-films/featured-films.component';
 import { ChooseComponent } from './choose/choose.component';
 import { WhatsOnComponent } from './whats-on/whats-on.component';
+import { FilmDescComponent } from './film-desc/film-desc.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WhatsOnComponent } from './whats-on/whats-on.component';
     NavBarComponent,
     FeaturedFilmsComponent,
     ChooseComponent,
-    WhatsOnComponent
+    WhatsOnComponent,
+    FilmDescComponent
   ],
   imports: [
     BrowserModule
