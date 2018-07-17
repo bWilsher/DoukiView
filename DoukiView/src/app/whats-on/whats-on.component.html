@@ -1,3 +1,21 @@
-<p>
-  whats-on works!
-</p>
+<div class="filmSectionContainer">
+  <h2>Most Popular</h2>
+  <div class="scrollmenu filmListContainer">
+    <div *ngFor="let film of filmList">
+        <img [src]="film.posterImage" alt="FilmName"> 
+        <br> 
+        <label>{{film.name}}</label>
+    </div>
+  </div>
+</div>
+  
+<div class="filmSectionContainer">
+    <h2>New Releases</h2>
+    <div class="scrollmenu filmListContainer">
+      <div *ngFor="let film of filmList">
+          <img [src]="film.posterImage" alt="FilmName"> 
+          <br> 
+          <label>{{film.name}}</label>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,42 @@
+h2 {
+  padding-left: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.scrollmenu {
+  overflow: auto;
+  /* white-space: nowrap; */
+}
+
+.scrollmenu img {
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+}
+
+img {
+  margin: 0% 2% 1% 2%;
+  width: 200px;
+  height: auto;
+}
+
+
+.filmListContainer, .filmSectionContainer {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.filmSectionContainer{
+  flex-direction: column;
+  margin: 10px 20px 5px 20px;
+}
+
+.filmListContainer:hover {
+  cursor:pointer;
+}
+
+label {
+  padding-left: 75px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

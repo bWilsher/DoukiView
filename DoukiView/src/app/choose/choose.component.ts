@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChooseComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    function myFunction() {
+      var x = document.createElement("INPUT");
+      x.setAttribute("type", "date");
+      x.setAttribute("value", "2014-02-09");
+      document.body.appendChild(x);
+  }
+  }
 
   ngOnInit() {
   }
