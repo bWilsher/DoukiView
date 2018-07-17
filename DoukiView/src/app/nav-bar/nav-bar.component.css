@@ -1,75 +1,47 @@
-.topnav {
-  overflow: hidden;
+.topnav{
   background-color: #333;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
 }
 
 img{
-    float: left;
-    width: 200px; 
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
+  width: auto;
+  height: 100px;
+  align-content: left;
+  padding-left: 20px;
 }
 
-h1 {
+h1{
   color: white;
-  font-family: Microsoft Yi Baiti;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 10px;
 }
 
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  font-size: 17px;
-}
-
-.topnav .search-container {
+.searchContainer{
+  align-items: right;
   float: right;
-  padding-right: 100px;
-  padding-top: 35px;
+  margin-top: 20px;
+  margin-right: 60px;
+  position: absolute;
 }
 
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('..\..\assets\Logo2.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  
 }
 
-.topnav .search-container button {
-  float: right ;
-  float: bottom;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: green;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-button{
-  color: white;
-  height: 32px;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+input[type=text]:focus {
+  width: 100%;
 }
