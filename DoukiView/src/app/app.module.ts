@@ -7,6 +7,7 @@ import { FeaturedFilmsComponent } from './featured-films/featured-films.componen
 import { ChooseComponent } from './choose/choose.component';
 import { WhatsOnComponent } from './whats-on/whats-on.component';
 import { FilmDescComponent } from './film-desc/film-desc.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { FilmDescComponent } from './film-desc/film-desc.component';
     FilmDescComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
