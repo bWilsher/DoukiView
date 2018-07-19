@@ -1,21 +1,51 @@
 <div class="filmSectionContainer">
-  <h2>Most Popular</h2>
+  <h2>Family Friendly Films</h2>
   <div class="scrollmenu filmListContainer">
-    <div *ngFor="let film of Films.storedResponse">
+      <div *ngFor="let film of Films.storedResponse">
+          <div *ngIf="film.rating == 'PG'">
         <img [src]="film.posterImage" alt="FilmName"> 
         <br> 
         <label>{{film.movieName}}</label>
-    </div>
-  </div>
-</div>
-  
-<div class="filmSectionContainer">
-    <h2>New Releases</h2>
-    <div class="scrollmenu filmListContainer">
-      <div *ngFor="let film2 of Films.storedResponse">
-          <img [src]="film2.posterImage" alt="FilmName"> 
-          <br> 
-          <label>{{film2.movieName}}</label>
       </div>
     </div>
   </div>
+</div> 
+  
+ <div class="filmSectionContainer">
+    <h2>Action Films</h2>
+    <div class="scrollmenu filmListContainer">
+      <div *ngFor="let film2 of Films.storedResponse">
+          <div *ngIf="film2.genre == 'Action'">
+
+          <img [src]="film2.posterImage" alt="FilmName"> 
+          <br> 
+          <label>{{film2.movieName}}</label>
+        </div>
+        </div>
+    </div>
+  </div> 
+
+  <div class="filmSectionContainer">
+      <h2>Musical Films</h2>
+      <div class="scrollmenu filmListContainer">
+        <div *ngFor="let film2 of Films.storedResponse">
+            <div *ngIf="film2.genre == 'Musical'">
+  
+            <img [src]="film2.posterImage" alt="FilmName"> 
+            <br> 
+            <label>{{film2.movieName}}</label>
+          </div>
+          </div>
+      </div>
+    </div> 
+
+  <div class="filmSectionContainer">
+      <h2>All Films in Shinema Theaters</h2>
+      <div class="scrollmenu filmListContainer">
+        <div *ngFor="let film2 of Films.storedResponse">  
+            <img [src]="film2.posterImage" alt="FilmName"> 
+            <br> 
+            <label>{{film2.movieName}}</label>
+          </div> 
+      </div>
+    </div>
