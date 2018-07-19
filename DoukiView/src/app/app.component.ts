@@ -9,9 +9,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class AppComponent {
   title = 'app';
-  storedResponse: any;
-  constructor(private http: HttpClient, private Films: FilmService){
-    console.log(this.Films.storedResponse);
+  constructor(private http: HttpClient){
   }
 
   

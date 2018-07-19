@@ -8,6 +8,8 @@
      /* 40% of the view port height - vw is view port width  height: 40vh;*/
   
     justify-content: space-between;
+
+    background: center top no-repeat;
    
     background-size: cover;
      /*object-fit: contain*/

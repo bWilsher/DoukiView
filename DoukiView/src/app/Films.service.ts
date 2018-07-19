@@ -8,10 +8,11 @@ export class FilmService {
 
   constructor(private http: HttpClient) { }
 
-  storedResponse: any;
+  storedResponse: object[];
 
 
   getFilms(){
+    console.log(this.http.get('https://group-project-3ab61.firebaseio.com/Movies.json'));
     return this.http.get('https://group-project-3ab61.firebaseio.com/Movies.json')
   }
 
@@ -19,10 +20,10 @@ export class FilmService {
     return Object.keys(res).map((key) =>{ return res[key]})
     } 
 
-    onGetFilms(){
-        this.getFilms().subscribe(res => { 
-          this.storedResponse = this.generateArray(res);
-        });
-      }
+  onGetFilms(){
+      this.getFilms().subscribe(res => { 
+        this.storedResponse = this.generateArray(res);
+      });
+    }
 
 }
