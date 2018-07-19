@@ -23,6 +23,7 @@ export class FilmService {
   onGetFilms(){
       this.getFilms().subscribe(res => { 
         this.storedResponse = this.generateArray(res);
+        console.log(this.storedResponse);
       });
     }
 

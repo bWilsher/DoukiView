@@ -1,7 +1,7 @@
 <div class="filmSectionContainer">
   <h2>Most Popular</h2>
   <div class="scrollmenu filmListContainer">
-    <div *ngFor="let film of filmList">
+    <div *ngFor="let film of Films.storedResponse">
         <img [src]="film.posterImage" alt="FilmName"> 
         <br> 
         <label>{{film.movieName}}</label>
@@ -12,11 +12,10 @@
 <div class="filmSectionContainer">
     <h2>New Releases</h2>
     <div class="scrollmenu filmListContainer">
-      <div *ngFor="let film of filmList">
-          <img [src]="film.posterImage" alt="FilmName"> 
-          <!-- Click > takes to film-desc -->
+      <div *ngFor="let film2 of Films.storedResponse">
+          <img [src]="film2.posterImage" alt="FilmName"> 
           <br> 
-          <label>{{film.movieName}}</label>
+          <label>{{film2.movieName}}</label>
       </div>
     </div>
   </div>

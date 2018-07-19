@@ -12,14 +12,14 @@ import { generate } from 'rxjs';
 export class WhatsOnComponent implements OnInit {
   // filmList: object[] = [{name:"Star Wars", posterImage: "http://wwwcdn.howdesign.com/wp-content/uploads/a44ea639e2a22cf9.jpg"}, {name: "Maze Runner", posterImage:"https://cdn.cinematerial.com/p/297x/9ebaqxve/maze-runner-the-death-cure-movie-poster-md.jpg"}, {name: "John Wick 2",posterImage: "http://lwlcdn.lwlies.com/wp-content/uploads/2017/11/John-Wick-2-900x0-c-default.jpg" }, {name:"Star Wars", posterImage: "http://wwwcdn.howdesign.com/wp-content/uploads/a44ea639e2a22cf9.jpg"}, {name: "Maze Runner", posterImage:"https://cdn.cinematerial.com/p/297x/9ebaqxve/maze-runner-the-death-cure-movie-poster-md.jpg"}, {name: "John Wick 2",posterImage: "http://lwlcdn.lwlies.com/wp-content/uploads/2017/11/John-Wick-2-900x0-c-default.jpg" }, {name:"Star Wars", posterImage: "http://wwwcdn.howdesign.com/wp-content/uploads/a44ea639e2a22cf9.jpg"}, {name: "Maze Runner", posterImage:"https://cdn.cinematerial.com/p/297x/9ebaqxve/maze-runner-the-death-cure-movie-poster-md.jpg"}, {name: "John Wick 2",posterImage: "http://lwlcdn.lwlies.com/wp-content/uploads/2017/11/John-Wick-2-900x0-c-default.jpg" }];
 
-  movieList;
+  
 
   constructor(private http: HttpClient, private Films: FilmService){
     
-    this.Films.getFilms().subscribe(res => { 
-      this.movieList = this.Films.generateArray(res)});
+    this.Films.onGetFilms()
 
-      console.log(this.movieList);
+
+      console.log(this.Films.storedResponse + "Hi from component");
     
   }
 
